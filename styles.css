@@ -1,0 +1,330 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+    background-color: #FFFEF2;
+    text-align: center;
+}
+
+/* General Styles */
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFEF2;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFEF2;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+header h1 { 
+
+    width: 50%;
+    box-shadow: 0 -4px 10px rgba(204, 237, 255, 0.7);
+    padding: 1rem;
+    font-family: "Noto Sans JP", sans-serif;
+    /* background-color: rgb(204, 237, 255); */
+}
+
+h1 {
+    margin: 0;
+    color:#000;
+}
+
+section {
+    margin: 0px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(204, 237, 255);
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+    padding: 10px 0;
+    /* position: sticky; */
+    bottom: 0;
+    width: 100%;
+}
+
+/* Specific Styles */
+header img {
+    max-width: 100%;
+    height: calc(100vh - 6rem);
+}
+
+#InfoBoda {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    /* grid-auto-rows: auto; */
+    gap: 1rem;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: start;
+    margin: auto;
+    width: fit-content;
+    /* width: 90%; */
+}
+
+#InfoBoda div {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 2rem;
+    box-shadow: 0 0 10px rgba(204, 237, 255, 0.5);
+    margin-bottom: 5px;
+}
+
+#InfoBoda h2 {
+    margin-top: 0;
+}
+
+#InfoBoda p {
+    line-height: 1.2;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+#InfoBoda img {
+    margin-top: 1rem;
+    width: 100%;
+    height: auto;
+}
+
+#InfoBoda ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+button {
+    display: inline-block;
+    background-color: rgb(204, 237, 255);
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-bottom: 1rem;
+}
+
+#Back {
+    box-shadow: none !important;
+}
+
+/* Asegurarse de que todas las imágenes estén centradas y tengan un tamaño uniforme */
+#InfoBoda img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%; /* Puedes ajustar este valor al tamaño que prefieras */
+}
+
+/* Añadir un poco de espacio entre los elementos de la lista */
+#InfoBoda ul li {
+    margin-bottom: 10px;
+}
+
+/* Añadir un poco de espacio entre los párrafos */
+#InfoBoda p {
+    margin-bottom: 20px;
+}
+
+/* Añadir un poco de espacio entre los encabezados y el contenido que les sigue */
+#InfoBoda h2 {
+    margin-bottom: 20px;
+}
+
+/* Añadir un poco de espacio entre las secciones */
+#InfoBoda div {
+    margin-bottom: 10px;
+}
+
+/* Estilos para el pie de página */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los elementos horizontalmente */
+    justify-content: center; /* Centra los elementos verticalmente */
+    color: #000;
+}
+
+/* Estilos para la imagen en el pie de página */
+footer img {
+    margin-bottom: 10px; /* Añade un poco de espacio debajo de la imagen */
+}
+
+
+/* Estilos para la sección de inicio */
+#Inicio {
+    margin-top: 1rem;
+    font-size: 1.2em; /* Aumenta el tamaño de la fuente */
+    line-height: 1.6; /* Aumenta el espacio entre las líneas de texto */
+    color: #333; /* Cambia el color del texto a un gris oscuro para facilitar la lectura */
+    text-align: justify; /* Alinea el texto a ambos lados para un aspecto más pulido */
+    text-align-last: center;
+    padding: 20px; /* Añade un poco de espacio alrededor del texto para evitar que se pegue a los bordes */
+    background-color: #f9f9f9; /* Añade un color de fondo suave para contrastar con el texto */
+    border-radius: 10px; /* Suaviza las esquinas del contenedor de texto */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Añade una sombra suave alrededor del contenedor de texto para darle profundidad */
+}
+
+#Inicio h2 {
+    text-align: center;
+}
+
+#Inicio p {
+    margin-top: 0.5rem;
+}
+
+#Inicio ul {
+    margin-top: 1rem;
+}
+
+/* Estilos para el contenedor del contador de tiempo */
+#timer {
+    display: flex; /* Alinea los componentes del contador en una fila */
+    bottom: 0;
+    justify-content: space-evenly; /* Distribuye los componentes del contador de manera uniforme a lo largo de la fila */
+    padding: 0rem; /* Añade un poco de espacio alrededor del contador */
+    background-color: rgb(204, 237, 255); 
+    width: 50rem;
+    height: 3rem;
+    align-items: center;
+    /* Añade un color de fondo suave al contador */
+    border-radius: 3rem; /* Suaviza las esquinas del contenedor del contador */
+    box-shadow: none !important; /* Elimina la sombra alrededor del contenedor del contador */
+}
+
+/* Estilos para cada componente del contador de tiempo */
+#timerdias, #timerhoras, #timerminutos, #timersegundos {
+    width: 2rem;
+    margin: 10px;
+    padding: 5rem; /* Añade un poco de espacio alrededor de cada componente del contador */
+    /* background-color: rgb(204, 237, 255) !important; Añade un color de fondo a cada componente del contador */
+    border-radius: 5px; /* Suaviza las esquinas de cada componente del contador */
+    box-shadow: none ; /* Elimina la sombra alrededor de cada componente del contador */
+    font-size: large;
+}
+
+/* Asegúrate de que todos los elementos y pseudo-elementos usen box-sizing: border-box; */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+button p {
+    margin-top: 10px;
+    height: auto;
+    text-align: center;
+    vertical-align: middle;
+    margin-bottom: 10px !important;
+    color: #333;
+}
+
+h2 {
+    margin-top: 2rem;
+    padding-top: 1rem;
+}
+
+#Dresscode img {
+    width: 35rem;
+}
+
+
+/* Estilos para pantallas de tamaño grande (por ejemplo, laptops, computadoras de escritorio) */
+@media (min-width: 1200px) {
+    #InfoBoda {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); /* Muestra dos elementos por fila */
+        width: 55%;
+        gap: 2rem;
+    }
+    #Inicio {
+        margin-top: 2rem;
+    }
+}
+
+/* Estilos para pantallas de tamaño mediano (por ejemplo, tablets) */
+@media (min-width: 768px) and (max-width: 1199px) {
+    #InfoBoda {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); /* Muestra un elemento por fila */
+        gap: 2rem;
+    }
+    #Inicio {
+        margin-top: 2rem;
+    }
+}
+
+/* Estilos para pantallas de tamaño pequeño (por ejemplo, teléfonos móviles) */
+@media (max-width: 767px) {
+    #InfoBoda {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); /* Muestra un elemento por fila */
+        gap: 1rem;
+        padding: 0 10px; /* Añade un poco de espacio alrededor del grid para evitar que el contenido se pegue a los bordes */
+        margin-top: 0.5rem;
+    }
+
+    /* Ajusta el tamaño de la fuente para pantallas pequeñas */
+    body {
+        font-size: 0.9em;
+    }
+
+    /* Asegúrate de que los márgenes no empujen el contenido fuera de la pantalla */
+    body, h1, h2, p, img, div {
+        margin: 0;
+        max-width: 100%;
+    }
+
+    #Inicio {
+        padding-top: 2rem;
+    }
+
+    /* Asegúrate de que las imágenes no sean más grandes que su contenedor */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    header img {
+        height: calc(50vh - 6rem);
+        width: auto;
+    }
+    
+    header h1 {
+        width: 100%;
+        margin: 0px;
+    }
+
+    /* Asegúrate de que los iframes no sean más grandes que su contenedor */
+    iframe {
+        max-width: 100%;
+    }
+
+    #timer
+    {
+        max-width: 90%;
+    }
+
+    #timerdias, #timerhoras, #timerminutos, #timersegundos {
+        margin: 0;
+        padding: 0%;
+    }
+}

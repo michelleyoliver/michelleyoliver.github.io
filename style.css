@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: aquamarine;
+    text-align: center;
+}
+
+#container {
+    position: relative;
+    width: 800px;
+    height: 600px;
+    margin: 20px auto;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+header img {
+    max-width: 100%;
+}
+
+#mainMenu {
+    background-color: red;
+    background-image: url('assets/RagotHappy.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -150px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition: left 1s;
+}
+
+#mainMenu > h1 {
+    margin: 100px auto 90px auto;
+    animation: MainTitleKeyframes 5s ease  2s infinite alternate;
+}
+
+
+#gameOver {
+    background-color: black;
+    background-image: url('assets/RagotDed.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px 0px;
+    
+    position: absolute;
+    top: 0;
+    left: 800px;
+    height: 100%;
+    width: 100%;
+    transition: left 1s;
+}
+
+#gameOver > h1 
+{
+    margin: 100px auto 90px auto;
+}
+
+#statsGameOver
+{
+    color: white;
+}
+
+.menuButton {
+    width: 300px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+    border: solid 2px grey;
+    box-shadow: 0px 3px 4px -2px rgba(0, 0, 0, 0.75);
+    margin: 40px auto;
+    cursor: pointer;
+    transform: background-color 0.2s, box-shadow 0.5s; 
+}
+
+.menuButton:hover{
+
+    box-shadow: rgb(207, 207, 207);
+}
+
+.menuButton:active{
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.75);
+}
+
+#credits {
+    visibility: hidden;
+    position: absolute;
+    top: -700px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+    background-image: url('assets/Ragot.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -150px 0px;
+    padding: 80px 160px;
+    box-sizing: border-box;
+    animation: CreditsMovement 2s linear 1 normal;
+    animation-fill-mode: both;
+    transform: opacity 1s ease-in-out;
+    opacity: 0;
+    text-align: center;
+}
+
+#creditContainer > h2, #creditContainer > h3, #creditContainer > p , #creditContainer > h1{
+    margin-bottom: 10px;
+    margin-right: 100px;
+    color: black;
+    left: 0rem;
+}
+
+#creditContainer {
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+#credits.show {
+    visibility: visible;
+    opacity: 1;
+    animation: CreditsMovement 2s linear 1 normal forwards;
+}
+
+#credits.hide {
+    visibility: hidden;
+}
+
+#myCanvas {
+    background-color: white;
+    border: solid 0.5px black;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@keyframes MainTitleKeyframes {
+    0% { transform: rotate(0deg) scale(1) translate(0, 0) skew(0deg, 0deg); }
+    10% { transform: rotate(45deg) scale(1.1) translate(10px, 0) skew(10deg, 0deg); }
+    20% { transform: rotate(90deg) scale(1.2) translate(20px, 10px) skew(20deg, 10deg); }
+    30% { transform: rotate(135deg) scale(1.3) translate(0, 20px) skew(0deg, 20deg); }
+    40% { transform: rotate(180deg) scale(1.4) translate(-10px, 10px) skew(-10deg, 10deg); }
+    50% { transform: rotate(225deg) scale(1.3) translate(-20px, 0) skew(-20deg, 0deg); }
+    60% { transform: rotate(270deg) scale(1.2) translate(-10px, -10px) skew(-10deg, -10deg); }
+    70% { transform: rotate(315deg) scale(1.1) translate(0, -20px) skew(0deg, -20deg); }
+    80% { transform: rotate(360deg) scale(1) translate(10px, -10px) skew(10deg, -10deg); }
+    90% { transform: rotate(405deg) scale(0.9) translate(20px, 0) skew(20deg, 0deg); }
+    100% { transform: rotate(450deg) scale(1) translate(0, 0) skew(0deg, 0deg); }
+}
+
+
+@keyframes CreditsMovement {
+    0% {top: -700px}
+    100% {top: 0px}
+}
